@@ -459,6 +459,48 @@
         <p class="developed" lang="en">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+    <div data-modal class="modal-backdrop is-hidden">
+      <div class="order-modal-window">
+        <button data-modal-close class="close-modal-window" type="button">
+          <svg class="close-svg">
+            <use href="../images/modal-sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="order-header">Оставьте свои данные, мы вам перезвоним</h3>
+        <form>
+          <div class="form-wraper">
+            <input
+              class="order-input"
+              type="text"
+              placeholder=" "
+              name="user-name"
+              id="user-name"
+            />
+            <label class="order-label" for="user-name">Имя</label>
+          </div>
+          <div class="form-wraper">
+            <input
+              class="order-input"
+              type="tel"
+              placeholder=" "
+              name="user-tel"
+              id="user-tel"
+            />
+            <label class="order-label" for="user-tel">Телефон</label>
+          </div>
+          <div class="form-wraper">
+            <input
+              class="order-input"
+              type="email"
+              placeholder=" "
+              name="user-mail"
+              id="user-mail"
+            />
+            <label class="order-label" for="user-mail">Почта</label>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
