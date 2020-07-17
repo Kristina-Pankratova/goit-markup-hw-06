@@ -438,7 +438,7 @@
             </li>
           </ul>
         </div>
-        <form class="footer-subscribe" action="" method="post">
+        <form class="footer-subscribe" action="#" method="post">
           <h3 class="footer-title">Подпишитесь на рассылку</h3>
           <input
             class="footer-input"
@@ -477,6 +477,9 @@
               id="user-name"
             />
             <label class="order-label" for="user-name">Имя</label>
+            <svg class="order-icon">
+              <use href="./images/modal-sprite.svg#icon-name"></use>
+            </svg>
           </div>
           <div class="form-wraper">
             <input
@@ -487,6 +490,9 @@
               id="user-tel"
             />
             <label class="order-label" for="user-tel">Телефон</label>
+            <svg class="order-icon">
+              <use href="./images/modal-sprite.svg#icon-telephone"></use>
+            </svg>
           </div>
           <div class="form-wraper">
             <input
@@ -497,6 +503,9 @@
               id="user-mail"
             />
             <label class="order-label" for="user-mail">Почта</label>
+            <svg class="order-icon">
+              <use href="./images/modal-sprite.svg#icon-mail"></use>
+            </svg>
           </div>
         </form>
         <div class="comment-wraper">
@@ -504,12 +513,20 @@
           <label class="comment-label" for="comment">Комментарий</label>
         </div>
         <div class="policy-wraper">
-          <input id="policy" type="checkbox" name="policy" value="policy" />
-          <label for="policy"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="">Условия договора</a></label
+          <label class="check policy-label" for="policy">
+            <input
+              class="policy-checkbox"
+              id="policy"
+              type="checkbox"
+              name="policy"
+              value="policy"
+            />
+            <span class="checkbox"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="policy-link" href="">Условия договора</a></label
           >
         </div>
+        <button class="order-buttom" type="button">Отправить</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
