@@ -732,13 +732,13 @@ a {
 .form-wraper {
   cursor: pointer;
 }
-.form-wraper:hover svg,
-.form-wraper:focus svg,
-.order-input:not(:placeholder-shown) svg {
+.form-wraper:hover .order-icon,
+.form-wraper:focus .order-icon,
+.order-input:not(:placeholder-shown) .order-icon {
   fill: var(--link-focus-color);
 }
 
-.form-wraper svg {
+.form-wraper .order-icon {
   position: absolute;
   left: 10px;
   top: 50%;
